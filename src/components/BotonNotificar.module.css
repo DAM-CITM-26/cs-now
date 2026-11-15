@@ -1,0 +1,22 @@
+.idle
+{
+    background-image: url(/src/iconos/Botones/Campana1.png);
+    background-size: cover;
+    background-position: center;
+    height: 45px;
+    width: 45px;
+    background-color: none;
+    border-radius: 60%;
+    border-width: 0;
+}
+
+.active
+{
+        background-image: url(/src/iconos/Botones/Campana.png);
+}
+
+.idle:hover
+{
+    cursor: pointer;
+    
+}

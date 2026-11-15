@@ -1,12 +1,15 @@
 import FilaEquipo from "./FilaEquipo";
-import { GetTeam } from "../helpers/GetTeam.js";
-import { GetMatchStatus } from "../helpers/GetMatchStatus.js";
+import { GetTeam } from "../utils/GetTeam.js";
+import { GetMatchStatus } from "../utils/GetMatchStatus.js";
 import styles from "./TarjetaPartido.module.css";
 import stylesFila from "./FilaEquipo.module.css";
 import Marcador from "./Marcador.jsx";
 import MarcadorGlobal from "./MarcadorGlobal.jsx";
 import BotonNotificar from "./BotonNotificar.jsx";
 import LiveChip from "./LiveChip.jsx";
+import LogoEquipo from "./LogoEquipo.jsx";
+
+
 
 function TarjetaPartido({ partido, equipos }) {
   const equipoA = GetTeam(partido.equipoA, equipos);
@@ -26,11 +29,15 @@ function TarjetaPartido({ partido, equipos }) {
     statusA = stylesFila.Losing;
   }
 
+  const botonPulsado = (id, nuevoEstado) => {
+    console.log(`Alarma partido ${id}: ${nuevoEstado}`)
+  }
+
   return (
     <div>
       <a className={styles.card}>
         <div className={styles.row} style={{ justifyContent: "space-between" }}>
-          <div className={styles.row}>
+          <div className={styles.row} style={{gap:"10%"}}>
             {partido.estado === "En directo" ? (
               <div className={styles.column}>
                 <LiveChip />
@@ -42,14 +49,19 @@ function TarjetaPartido({ partido, equipos }) {
                 <span>{partido.tipo} </span>
               </div>
             )}
-
-            <div className={styles.column}>
-              <FilaEquipo equipo={equipoA} />
-              <FilaEquipo equipo={equipoB} />
+            <div className={styles.row} style={{gap: "8%"}}>
+              <div className={styles.column}>
+                <LogoEquipo equipo={equipoA}/>
+                <LogoEquipo equipo={equipoB}/>
+              </div>
+              <div className={styles.column} style={{alignItems: "flex-start"}}>
+                <FilaEquipo equipo={equipoA} ganando={GetMatchStatus(partido)===partido.equipoA}/>
+                <FilaEquipo equipo={equipoB} ganando={GetMatchStatus(partido)===partido.equipoB}/>
+              </div>
             </div>
           </div>
 
-          {partido.estado === "En directo" ? (
+          {partido.estado === "En directo" || partido.estado === "Terminado"? (
             <div className={styles.row} style={{ gap: "10px" }}>
               <div className={styles.column}>
                 <Marcador rondas={partido.marcadorA} status={statusA} />
@@ -68,7 +80,7 @@ function TarjetaPartido({ partido, equipos }) {
               </div>
             </div>
           ) : (
-            <BotonNotificar />
+            <BotonNotificar partidoId={partido.id} onToggle={botonPulsado}/>
           )}
         </div>
       </a>

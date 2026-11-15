@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t1",
+    "nombre": "IEM Cologne",
+    "localizacion": "Colonia, Alemania",
+    "imagen": "./src/assets/Tournaments/IEM_Cologne.png"
+  },
+  {
+    "id": "t2",
+    "nombre": "BLAST Premier",
+    "localizacion": "Copenhague, Dinamarca",
+    "imagen": "./src/assets/Tournaments/BLAST_Premier.png"
+  },
+  {
+    "id": "t3",
+    "nombre": "ESL Pro League",
+    "localizacion": "San Ġiljan, Malta",
+    "imagen": "./src/assets/Tournaments/Pro_League.svg"
+  },
+  {
+    "id": "t4",
+    "nombre": "PGL Major",
+    "localizacion": "Copenhague, Dinamarca",
+    "imagen": "./src/assets/Tournaments/PGL_Major.png"
+  }
+]

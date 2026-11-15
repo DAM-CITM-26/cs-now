@@ -5,7 +5,12 @@ import Chip from "./components/Chip.jsx";
 
 import PARTIDOS from "./data/partidos.json";
 import EQUIPOS from "./data/equipos.json";
+import TORNEOS from "./data/torneos.json";
 import TarjetaPartido from "./components/TarjetaPartido.jsx";
+import LogoEquipo from "./components/LogoEquipo.jsx";
+import { GetTournament } from "./utils/GetTournament.js";
+
+import styles from "./components/TarjetaPartido.module.css";
 
 function cargar(clave, inicial) {
   const guardado = localStorage.getItem("cs-now-" + clave);
@@ -36,6 +41,7 @@ function App() {
   }
   //console.log(separated);
 
+
   return (
     <main>
       <h1>CS:NOW</h1>
@@ -43,7 +49,14 @@ function App() {
       <section>
         {Object.entries(separated).map(([torneo, partidosDelTorneo]) => (
           <div key={torneo}>
-            <Chip info={torneo} />
+            <div className={styles.row} style={{justifyContent: "center"}}>
+              <LogoEquipo equipo={GetTournament(torneo, TORNEOS)}/>
+              <Chip info={torneo} />                  
+            </div>
+          
+
+
+            
             {partidosDelTorneo.map((partido) => (
               <TarjetaPartido
                 key={partido.id}

@@ -1,0 +1,2 @@
+.estrellas { color: var(--color-acento); letter-spacing: 2px; }
+.estrellas button { border: none; background: none; font-size: 1.6rem; color: var(--color-acento); cursor: pointer; padding: 0 2px; }

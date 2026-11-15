@@ -1,10 +1,58 @@
 [
-  {"id": 1, "nombre": "Vitality", "imagen": "./src/assets/Teams/Vitality.png", "pais": "🇫🇷", "puntos": 1000},
-  {"id": 2, "nombre": "Spirit", "imagen": "./src/assets/Teams/Spirit.png", "pais": "🇷🇺", "puntos": 912},
-  {"id": 3, "nombre": "MOUZ", "imagen": "./src/assets/Teams/Mouz.png", "pais": "🇪🇺", "puntos": 880},
-  {"id": 4, "nombre": "FaZe", "imagen": "./src/assets/Teams/Faze.png", "pais": "🇪🇺", "puntos": 796},
-  {"id": 5, "nombre": "NAVI", "imagen": "./src/assets/Teams/Navi.png", "pais": "🇺🇦", "puntos": 771},
-  {"id": 6, "nombre": "G2", "imagen": "./src/assets/Teams/G2.png", "pais": "🇪🇺", "puntos": 702},
-  {"id": 7, "nombre": "Astralis", "imagen": "./src/assets/Teams/Astralis.png", "pais": "🇩🇰", "puntos": 610},
-  {"id": 8, "nombre": "Heroic", "imagen": "./src/assets/Teams/Heroic.png", "pais": "🇩🇰", "puntos": 589}
+  {
+    "id": 1,
+    "nombre": "Vitality",
+    "imagen": "./src/assets/Teams/Vitality.png",
+    "pais": "🇫🇷",
+    "puntos": 1000
+  },
+  {
+    "id": 2,
+    "nombre": "Spirit",
+    "imagen": "./src/assets/Teams/Spirit.png",
+    "pais": "🇷🇺",
+    "puntos": 912
+  },
+  {
+    "id": 3,
+    "nombre": "MOUZ",
+    "imagen": "./src/assets/Teams/Mouz.png",
+    "pais": "🇪🇺",
+    "puntos": 880
+  },
+  {
+    "id": 4,
+    "nombre": "FaZe",
+    "imagen": "./src/assets/Teams/Faze.png",
+    "pais": "🇪🇺",
+    "puntos": 796
+  },
+  {
+    "id": 5,
+    "nombre": "NAVI",
+    "imagen": "./src/assets/Teams/Navi.png",
+    "pais": "🇺🇦",
+    "puntos": 771
+  },
+  {
+    "id": 6,
+    "nombre": "G2",
+    "imagen": "./src/assets/Teams/G2.png",
+    "pais": "🇪🇺",
+    "puntos": 702
+  },
+  {
+    "id": 7,
+    "nombre": "Astralis",
+    "imagen": "./src/assets/Teams/Astralis.png",
+    "pais": "🇩🇰",
+    "puntos": 610
+  },
+  {
+    "id": 8,
+    "nombre": "Heroic",
+    "imagen": "./src/assets/Teams/Heroic.png",
+    "pais": "🇩🇰",
+    "puntos": 589
+  }
 ]

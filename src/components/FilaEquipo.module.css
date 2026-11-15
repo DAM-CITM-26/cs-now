@@ -1,5 +1,24 @@
-.fila { display: flex; align-items: center; justify-content: space-between; gap: var(--espacio-2); padding: var(--espacio-1) 0; }
-.equipo { display: flex; align-items: center; gap: var(--espacio-2); }
-.escudo { height: 25px; width: auto; }
-.ganador { font-weight: 700; }
-.puntosGanador { font-weight: 700; color: var(--color-ganador); }
+.Winning
+{
+    color: green;
+}
+
+.Losing
+{
+    color: rgb(255, 0, 0);
+}
+
+.Draw
+{
+
+    color: rgb(82, 82, 82);
+}
+
+.equipo-info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}

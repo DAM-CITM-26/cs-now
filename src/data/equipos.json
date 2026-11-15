@@ -1,58 +1,184 @@
 [
   {
     "id": 1,
-    "nombre": "Vitality",
-    "imagen": "./src/assets/Teams/Vitality.png",
-    "pais": "🇫🇷",
-    "puntos": 1000
-  },
-  {
-    "id": 2,
     "nombre": "Spirit",
     "imagen": "./src/assets/Teams/Spirit.png",
     "pais": "🇷🇺",
     "puntos": 912
   },
   {
+    "id": 2,
+    "nombre": "Vitality",
+    "imagen": "./src/assets/Teams/Vitality.png",
+    "pais": "🇫🇷",
+    "puntos": 1000
+  },
+  {
     "id": 3,
-    "nombre": "MOUZ",
-    "imagen": "./src/assets/Teams/Mouz.png",
-    "pais": "🇪🇺",
-    "puntos": 880
+    "nombre": "Falcons",
+    "imagen": "./src/assets/Teams/Falcons.png",
+    "pais": "🇸🇦",
+    "puntos": 390
   },
   {
     "id": 4,
-    "nombre": "FaZe",
-    "imagen": "./src/assets/Teams/Faze.png",
-    "pais": "🇪🇺",
-    "puntos": 796
-  },
-  {
-    "id": 5,
-    "nombre": "NAVI",
-    "imagen": "./src/assets/Teams/Navi.png",
-    "pais": "🇺🇦",
-    "puntos": 771
-  },
-  {
-    "id": 6,
-    "nombre": "G2",
-    "imagen": "./src/assets/Teams/G2.png",
-    "pais": "🇪🇺",
-    "puntos": 702
-  },
-  {
-    "id": 7,
     "nombre": "Astralis",
     "imagen": "./src/assets/Teams/Astralis.png",
     "pais": "🇩🇰",
     "puntos": 610
   },
   {
+    "id": 5,
+    "nombre": "Furia",
+    "imagen": "./src/assets/Teams/Furia.png",
+    "pais": "🇧🇷",
+    "puntos": 300
+  },
+  {
+    "id": 6,
+    "nombre": "Mouz",
+    "imagen": "./src/assets/Teams/Mouz.png",
+    "pais": "🇪🇺",
+    "puntos": 880
+  },
+  {
+    "id": 7,
+    "nombre": "Parivision",
+    "imagen": "./src/assets/Teams/Parivision.png",
+    "pais": "🇷🇺",
+    "puntos": 150
+  },
+  {
     "id": 8,
+    "nombre": "Fanatic",
+    "imagen": "./src/assets/Teams/Fanatic.png",
+    "pais": "🇪🇺",
+    "puntos": 200
+  },
+  {
+    "id": 9,
+    "nombre": "Fut",
+    "imagen": "./src/assets/Teams/Fut.png",
+    "pais": "🇹🇷",
+    "puntos": 100
+  },
+  {
+    "id": 10,
+    "nombre": "The Mongolz",
+    "imagen": "./src/assets/Teams/The_Mongolz.png",
+    "pais": "🇲🇳",
+    "puntos": 250
+  },
+  {
+    "id": 11,
+    "nombre": "Liquid",
+    "imagen": "./src/assets/Teams/Liquid.png",
+    "pais": "🇺🇸",
+    "puntos": 480
+  },
+  {
+    "id": 12,
+    "nombre": "Linn Vision",
+    "imagen": "./src/assets/Teams/Linn_Vision.png",
+    "pais": "🇨🇳",
+    "puntos": 180
+  },
+  {
+    "id": 13,
+    "nombre": "Virtus.pro",
+    "imagen": "./src/assets/Teams/Virtus.pro.png",
+    "pais": "🇷🇺",
+    "puntos": 550
+  },
+  {
+    "id": 14,
+    "nombre": "G2",
+    "imagen": "./src/assets/Teams/G2.png",
+    "pais": "🇪🇺",
+    "puntos": 702
+  },
+  {
+    "id": 15,
+    "nombre": "Tyloo",
+    "imagen": "./src/assets/Teams/Tyloo.png",
+    "pais": "🇨🇳",
+    "puntos": 120
+  },
+  {
+    "id": 16,
+    "nombre": "Legacy",
+    "imagen": "./src/assets/Teams/Legacy.png",
+    "pais": "🇧🇷",
+    "puntos": 110
+  },
+  {
+    "id": 17,
+    "nombre": "9z",
+    "imagen": "./src/assets/Teams/9z.png",
+    "pais": "🇦🇷",
+    "puntos": 320
+  },
+  {
+    "id": 18,
+    "nombre": "M8",
+    "imagen": "./src/assets/Teams/M8.png",
+    "pais": "🇫🇷",
+    "puntos": 90
+  },
+  {
+    "id": 19,
+    "nombre": "Faze",
+    "imagen": "./src/assets/Teams/Faze.png",
+    "pais": "🇪🇺",
+    "puntos": 796
+  },
+  {
+    "id": 20,
+    "nombre": "M80",
+    "imagen": "./src/assets/Teams/M80.png",
+    "pais": "🇺🇸",
+    "puntos": 140
+  },
+  {
+    "id": 21,
+    "nombre": "Aurora",
+    "imagen": "./src/assets/Teams/Aurora.png",
+    "pais": "🇷🇺",
+    "puntos": 160
+  },
+  {
+    "id": 22,
+    "nombre": "Navi",
+    "imagen": "./src/assets/Teams/Navi.png",
+    "pais": "🇺🇦",
+    "puntos": 771
+  },
+  {
+    "id": 23,
+    "nombre": "Magic",
+    "imagen": "./src/assets/Teams/Magic.png",
+    "pais": "🇺🇸",
+    "puntos": 80
+  },
+  {
+    "id": 24,
     "nombre": "Heroic",
     "imagen": "./src/assets/Teams/Heroic.png",
     "pais": "🇩🇰",
     "puntos": 589
+  },
+  {
+    "id": 25,
+    "nombre": "NiP",
+    "imagen": "./src/assets/Teams/NiP.png",
+    "pais": "🇸🇪",
+    "puntos": 220
+  },
+  {
+    "id": 26,
+    "nombre": "Bet Boom",
+    "imagen": "./src/assets/Teams/Bet_Boom.png",
+    "pais": "🇷🇺",
+    "puntos": 130
   }
 ]

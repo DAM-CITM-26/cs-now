@@ -133,3 +133,14 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

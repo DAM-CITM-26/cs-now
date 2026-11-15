@@ -1,16 +1,11 @@
 import styles from "./FilaEquipo.module.css";
 
-function FilaEquipo({ equipo, rondas, status }) {
+function FilaEquipo({ equipo, ganando}) {
   return (
     <div className={styles["equipo-info"]}>
-      <div>
-        <img
-          src={equipo.imagen}
-          alt={equipo.nombre}
-          style={{ height: "25px" }}
-        />
-        <span>{equipo.nombre}</span>
-      </div>
+
+        <span className={ganando? styles.Ganando : ""} style={{whiteSpace: "nowrap"}}>{equipo.nombre}</span>
+
     </div>
   );
 }

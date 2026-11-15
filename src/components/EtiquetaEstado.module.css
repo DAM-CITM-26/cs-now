@@ -1,0 +1,3 @@
+.directo { background: var(--color-directo); color: #FFC8C8; }
+.proximo { background: var(--color-superficie); color: var(--color-acento); }
+.terminado { background: var(--color-superficie); color: var(--color-texto-suave); }

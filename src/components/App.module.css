@@ -1,0 +1,14 @@
+.cabecera {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-3);
+  padding: var(--espacio-4);
+  padding-inline: max(var(--espacio-4), calc((100% - 720px) / 2 + var(--espacio-4)));
+  background: var(--color-fondo);
+  border-bottom: 1px solid var(--color-borde);
+}
+.titulo { font-size: 1.4rem; font-weight: 800; color: var(--color-acento); }

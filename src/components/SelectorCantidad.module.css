@@ -1,0 +1,4 @@
+.cantidad { display: flex; align-items: center; gap: var(--espacio-3); }
+.cantidad button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--color-borde); background: var(--color-superficie); color: var(--color-texto); font-size: 1.2rem; cursor: pointer; }
+.cantidad output { min-width: 2ch; text-align: center; font-weight: 700; }
+.cantidad span { min-width: 7ch; }

@@ -1,0 +1,13 @@
+.fondo { position: fixed; inset: 0; z-index: 20; background: rgba(0, 0, 0, 0.6); }
+.panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 21;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: var(--color-superficie);
+  border-radius: 16px 16px 0 0;
+  padding: var(--espacio-5) var(--espacio-4);
+}

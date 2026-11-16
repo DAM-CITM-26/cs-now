@@ -10,7 +10,8 @@ import TarjetaPartido from "./components/TarjetaPartido.jsx";
 import LogoEquipo from "./components/LogoEquipo.jsx";
 import { GetTournament } from "./utils/GetTournament.js";
 
-import styles from "./components/TarjetaPartido.module.css";
+import styles from "./components/Screen1.module.css";
+import Cabecera from "./components/Cabecera.jsx";
 
 function cargar(clave, inicial) {
   const guardado = localStorage.getItem("cs-now-" + clave);
@@ -41,32 +42,29 @@ function App() {
   }
   //console.log(separated);
 
-
   return (
     <main>
-      <h1>CS:NOW</h1>
+      <main className={styles.main}>
+        <Cabecera />
+        <section className={styles.partidosList}>
+          {Object.entries(separated).map(([torneo, partidosDelTorneo]) => (
+            <div key={torneo} style={{ padding: "0 0 3vh 0" }}>
+              <div className={styles.row} style={{ justifyContent: "center" }}>
+                <LogoEquipo equipo={GetTournament(torneo, TORNEOS)} />
+                <Chip info={torneo} />
+              </div>
 
-      <section>
-        {Object.entries(separated).map(([torneo, partidosDelTorneo]) => (
-          <div key={torneo}>
-            <div className={styles.row} style={{justifyContent: "center"}}>
-              <LogoEquipo equipo={GetTournament(torneo, TORNEOS)}/>
-              <Chip info={torneo} />                  
+              {partidosDelTorneo.map((partido) => (
+                <TarjetaPartido
+                  key={partido.id}
+                  partido={partido}
+                  equipos={EQUIPOS}
+                />
+              ))}
             </div>
-          
-
-
-            
-            {partidosDelTorneo.map((partido) => (
-              <TarjetaPartido
-                key={partido.id}
-                partido={partido}
-                equipos={EQUIPOS}
-              />
-            ))}
-          </div>
-        ))}
-      </section>
+          ))}
+        </section>
+      </main>
     </main>
   );
 }

@@ -65,7 +65,7 @@
   {
     "id": 10,
     "nombre": "The Mongolz",
-    "imagen": "./src/assets/Teams/The_Mongolz.png",
+    "imagen": "./src/assets/Teams/TheMongolz.png",
     "pais": "🇲🇳",
     "puntos": 250
   },
@@ -79,7 +79,7 @@
   {
     "id": 12,
     "nombre": "Linn Vision",
-    "imagen": "./src/assets/Teams/Linn_Vision.png",
+    "imagen": "./src/assets/Teams/LinnVision.png",
     "pais": "🇨🇳",
     "puntos": 180
   },
@@ -177,7 +177,7 @@
   {
     "id": 26,
     "nombre": "Bet Boom",
-    "imagen": "./src/assets/Teams/Bet_Boom.png",
+    "imagen": "./src/assets/Teams/BetBoom.png",
     "pais": "🇷🇺",
     "puntos": 130
   }

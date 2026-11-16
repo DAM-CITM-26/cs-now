@@ -1,0 +1,21 @@
+::root {
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.partidosList {
+  width: 90vw;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

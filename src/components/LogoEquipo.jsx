@@ -1,12 +1,11 @@
-function LogoEquipo ({equipo})
-{
-    return(
-        <img
-            src={equipo.imagen}
-            alt={equipo.nombre}
-            style={{ height: "25px" }}
-        />
-    )
+function LogoEquipo({ equipo }) {
+  return (
+    <img
+      src={equipo.imagen}
+      alt={equipo.nombre}
+      style={{ height: "25px", objectFit: "contain" }}
+    />
+  );
 }
 
-export default LogoEquipo
+export default LogoEquipo;
